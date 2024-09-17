@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".MoreOfferActivity">
+    <TextView
+        android:id="@+id/tv_no_more_offers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No More Offers !!"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"/>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rv_more"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:listitem="@layout/item_more_offers"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
